@@ -2,22 +2,22 @@
     "name": "portfolio",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "app.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "start": "node server.js"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/eckermania/portfolio.git"
+      "url": "git+https://github.com/eckermania/portfoliov2.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/eckermania/portfolio/issues"
+      "url": "https://github.com/eckermania/portfoliov2/issues"
     },
-    "homepage": "https://github.com/eckermania/portfolio#readme",
+    "homepage": "https://github.com/eckermania/portfoliov2#readme",
     "dependencies": {
       "express": "^4.16.3"
     }
