@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Eckerman</title>
+    <title>Eckerman Web Development</title>
     <link href= "css/reset.css" type="text/css" rel="stylesheet" />
     <link href= "css/style.css" type="text/css" rel="stylesheet" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -14,19 +14,21 @@
   <body>
     <header>
         <ul>
-            <li><i class="fas fa-bars"></i></li>
-            <li><i class="fas fa-times hidden"></i></li>
+            <li><i class="fas fa-bars menu"></i></li>
+            <li class="hidden menu"><i class="fas fa-times"></i></li>
             <li><a href="https://www.linkedin.com/in/erineckerman/"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/eckermania"><i class="fab fa-github"></i></a></li>
         </ul>
-        <div id="mobile-nav">
-                    <li></li><a href="#work">Work</a></li>
+        <div id="mobile-nav" class="hidden">
+            <ul>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
         <h1>Erin Eckerman</h1>
         <img src="img/001-fire.png"/>
-        <h2>Websites That Light a Fire</h2>
+        <h2>Web Development</h2>
     </header>
     <nav>
             <ul>
@@ -43,32 +45,62 @@
     </nav>
     <div id="work">
         <h3>Recent Work</h3>
-        <div class="hidden">
-            <div>
-                <h4>Safe Camp</h4>
-                <p>Seattle Social Service Resource Guide</p>
+        <section>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/safecamp.jpg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h4><a href="http://www.safe-camp.org/">Safe Camp</a></h4>
+                        <p>Seattle social service resource guide</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Eric's House</h4>
-                <p>Recovery and Support for Survivors of Suicide</p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/ericshouse.png" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Eric's House</h4>
+                        <p>support for survivors of suicide</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Wolf & Bear Woodworking</h4>
-                <p>Custom Furniture</p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/logo1.png" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Wolf & Bear Woodworking</h4>
+                        <p>custom furniture</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Salmon Cookies</h4>
-                <p>Fictional Cookie Retail</p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/books.jpg" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Bookshelf</h4>
+                        <p>mock-up of personal book organizer</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <div id="about">
+        <img class="separator" src="img/match1.png"/>
         <h3>About Me</h3>
-        <p>I've  worked for organizations ranging from small non-profits to multi-national corporations - predominantly in the international development and social responsibility sectors.  After building a set of program evaluation and program management skills for over a decade, I wanted to find a career that allowed for more creativity and an opportunity to amplify social impact through software development. I joined the coding bootcamp at Code Fellows in Seattle in mid-2018 and began my journey as a full-stack JavaScript and Java developer. When I'm not lighting figurative fires, I'm often relaxing beside a literal one with my two dogs and husband.</p>
+        <p>I've  worked for organizations ranging from small non-profits to multi-national corporations - predominantly in the international development and social responsibility sectors.  After building a skillset in program evaluation and program management for over a decade, I wanted to find a career that allowed for more creativity and an opportunity to amplify social impact through software development. I joined the Code Fellows coding bootcamp in Seattle in mid-2018 and began my journey as a full-stack JavaScript developer. When I'm not lighting figurative fires, I'm often relaxing beside a literal one with my two dogs and husband.</p>
     </div>
    <div id="contact">
-       <h3>Contact</h3>
+    <img src="img/match2.png" class="separator"/>   
+    <h3>Contact</h3>
        <form>
            <label>Name</label>
            <input type="text"/>

@@ -1,7 +1,16 @@
+'use strict';
+
+// Hide/Show Menu in Mobile View
+
 $('header i').on('click', function(){
-    $('header i').toggleClass('hidden');
+    $('.menu').toggleClass('hidden');
   });
 
+// $('header i').on('click', function(){
+//     $('.menu').toggleClass('hidden');
+//   });
+
   $('header i').on('click', function(){
-    $('header ul').toggleClass('show');
+    $('#mobile-nav').toggleClass('hidden');
   });
+
