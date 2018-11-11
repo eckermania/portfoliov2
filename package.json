@@ -1,24 +1,22 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/eckermania/portfoliov2.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/eckermania/portfoliov2/issues"
-    },
-    "homepage": "https://github.com/eckermania/portfoliov2#readme",
-    "dependencies": {
-      "express": "^4.16.3"
-    }
+  "name": "portfoliov2",
+  "version": "1.0.0",
+  "description": "Thanks to XXX for use of their campfire icon from flaticon ().",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eckermania/portfoliov2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eckermania/portfoliov2/issues"
+  },
+  "homepage": "https://github.com/eckermania/portfoliov2#readme",
+  "dependencies": {
+    "express": "^4.16.4"
   }
+}
