@@ -18,5 +18,9 @@
   "homepage": "https://github.com/eckermania/portfoliov2#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "engines": ,{
+    "node": "10.11.0",
+    "npm": "6.4.1"
   }
 }
