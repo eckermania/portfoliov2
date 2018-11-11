@@ -77,7 +77,7 @@ a:hover {
 #about p {
     width: 80vw;
     text-align: justify;
-    line-height: 3vw;
+    line-height: 5vw;
     margin: 2vh auto;
 }
 
@@ -101,6 +101,35 @@ section {
     color:white;
     list-style: none;
     text-align:left;
+}
+
+#contact ul {
+    display: block;
+}
+
+#contact a {
+    color:black;
+}
+
+#contact a:hover {
+    color: tomato;
+}
+
+#contact li {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+#contact i.fas {
+    color: orange;
+    display: block;
+}
+
+#contact img:last-child {
+    height: 20vw;
+    margin: 0 0 3vw 45vw;
+    text-align: center;
 }
 
 /* Images */
@@ -172,14 +201,53 @@ nav img {
     i.hidden, nav {
         display: none;
     }
-/* 
-    .show {
-        justify-content: flex-start;
-    } */
 
-    .flip-card {
-        width: 50vw;
-        height: 50vw;
+    #mobile-nav a {
+        color: black
+    }
+
+    #mobile-nav a:hover {
+        color: white;
+    }
+
+    #mobile-nav ul {
+        display:block;
+        padding: 2vw 0;
+        background-color:orange;
+        margin-bottom: 3vw;
+    }
+
+    #mobile-nav li {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #card-1, #card-2, #card-3, #card-4 {
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 2vw;
+    }
+
+    .flip-card img {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .flip-card h4 {
+        font-size: 10vw;
+        line-height: 12vw;
+        margin: 10vw 2vw 2vw 2vw;
+    }
+
+    .flip-card p {
+        font-size: 7vw;
+        margin: 0 3vw 2vw 3vw;
+        line-height: 10vw;
+    }
+
+    #contact li {
+        font-size: 6vw;
+        margin-bottom: 5vw;
     }
 
 }
