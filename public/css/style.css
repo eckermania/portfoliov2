@@ -28,11 +28,13 @@ h3 {
     text-align: center;
     padding: 3vh 2vh;
 }
+h4 {
+    margin: 5vw 2vw 2vw 2vw;
+}
 
 h4, .flip-card a {
     font-size: 2vw;
     color: white;
-    margin: 5vw 2vw 2vw 2vw;
     text-decoration-line: underline;
     line-height: 2.5vw;
 }
@@ -160,6 +162,32 @@ nav img {
     color: orange;
 }
 
+.description {
+    margin: 2vw 8vw;
+    text-align: justify;
+}
+
+.description p {
+    font-size: 2vw;
+    line-height: 5.5vw;
+    margin-bottom: 5vw;
+}
+
+.site-link {
+    color: tomato;
+    text-align: center;
+    margin-bottom: 6vw;
+    text-decoration: underline;
+}
+
+.site-link a {
+    color: tomato;
+}
+
+.site-link a:hover {
+    color: orange
+}
+
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -234,7 +262,7 @@ nav img {
     }
 
     .flip-card h4 {
-        font-size: 10vw;
+        font-size: 8vw;
         line-height: 12vw;
         margin: 10vw 2vw 2vw 2vw;
     }
