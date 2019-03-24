@@ -14,17 +14,17 @@ header {
 }
 
 h1 {
-    font-size:8vw;
+    font-size:3vw;
     margin: 0 1vw;
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: 2vh;
 }
 
 h3 {
-    font-size: 5vw;
+    font-size: 2vw;
     text-align: center;
     padding: 3vh 2vh;
 }
@@ -79,7 +79,8 @@ a:hover {
 #about p {
     width: 80vw;
     text-align: justify;
-    line-height: 5vw;
+    font-size: 2vw;
+    line-height: 3vw;
     margin: 2vh auto;
 }
 
@@ -100,13 +101,15 @@ section {
 }
 
 #mobile-nav {
+    display: none;
     color:white;
     list-style: none;
     text-align:left;
 }
 
 #contact ul {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #contact a {
@@ -118,14 +121,14 @@ section {
 }
 
 #contact li {
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
-    margin-bottom: 5vw;
+    margin-bottom: 1vw;
 }
 
 #contact i.fas {
     color: orange;
-    display: block;
+    display: inline-flex;
 }
 
 #contact img:last-child {
@@ -230,6 +233,11 @@ nav img {
         display: none;
     }
 
+
+    #mobile-nav {
+        display: block;
+    }
+    
     #mobile-nav a {
         color: black
     }
@@ -291,7 +299,7 @@ nav img {
     border: 1px solid orange;
     padding: auto 1vw;
     border-radius: 5px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
   }
   
   /* This container is needed to position the front and back side */

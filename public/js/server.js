@@ -3,11 +3,11 @@
 // Hide/Show Menu in Mobile View
 
 $(document).ready(function() {
-  $('header i').on('click', function(){
-    $('.menu').toggleClass('hidden');
+  $('.hamburger').on('click', function(){
+    $('.hamburger').toggleClass('is-active');
   });
 
-  $('header i').on('click', function(){
-    $('#mobile-nav').toggleClass('hidden');
+  $('.hamburger').on('click', function(){
+    $('#mobile-nav').slidedown();
   });
 });
