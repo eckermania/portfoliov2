@@ -50,77 +50,53 @@
     <div id="work">
         <h3>Recent Work</h3>
         <section>
-            <div class="flip-card" id="card-1">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/safecamp.jpg" />
-                    </div>
-                    <a href="pages/example1.html">
-                    <div class="flip-card-back">
-                        <h4>Safe Camp</h4>
-                        <p>Seattle social service resource guide</p>
-                    </div> </a>
+            <div class="project" id="rc">
+                <img src="img/RC_Logo_HigherRes.jpg" class="thumbnail"/>
+                <div class="project-detail">
+                    <h4><a href= "http://www.emeraldcityresourceguide.org/">Emerald City Resource Guide</a></h4>
+                    <p>The Emerald City Resource Guide is a directory of social services for Seattle published by the non-profit newspaper, <a href="https://www.realchangenews.org/" id="rc-link">Real Change</a>.  The guide was original published only in hard copy form with the intent to provide information to people in need who may not have access to the internet. During the first two rounds of publication, volunteers called each organization and handwrote updates to each organization's information - a time-consuming and error-prone process. This opportunity to reduce labor paired with reports from fellow organizations that the most frequent users of the guide were their own staff, I partnered with Real Change to create an online version of directory.  The site is built on a Node.js stack and uses a Postgres database to manage organization data.  This project is ongoing and v2 features will include username and password management so that Real Change volunteers and organizations can update their information directly.</p>
+                    <h5>Technologies Used</h4>
+                    <ul class="tech-list">
+                       <li><i class="fab fa-node-js tech"></i>&nbsp Node.js</li> 
+                       <li><i class="fas fa-database tech"></i>&nbsp SQL/Postgres Database</li>
+                       <li><i class="fas fa-mail-bulk tech"></i>&nbsp Nodemailer</li>
+                       <li><i class="fas fa-gift tech"></i>&nbsp Heroku</li>
+                       <li><i class="fab fa-github tech"></i>&nbsp GitHub</li>
+                    </ul>
                 </div>
             </div>
-            <div class="flip-card" id="card-2">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/ericshouse.png" />
-                    </div>
-                    <a href="pages/example2.html">
-                    <div class="flip-card-back">
-                        <h4>Eric's House</h4>
-                        <p>support for survivors of suicide</p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="flip-card" id="card-3">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/logo1.png" />
-                    </div>
-                    <a href="pages/example3.html">
-                    <div class="flip-card-back">
-                        <h4>Wolf & Bear Woodworking</h4>
-                        <p>custom furniture</p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="flip-card" id="card-4">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/books.jpg" />
-                    </div>
-                    <a href="pages/example4.html">
-                    <div class="flip-card-back">
-                        <h4>Bookshelf</h4>
-                        <p>mock-up of personal book organizer</p>
-                    </div>
-                    </a>
+            <div class="project" id="books">
+                <img src="img/books.jpg" class="thumbnail"/>
+                <div class="project-detail">
+                    <h4><a href="">The Library</a></h4>
+                    <p>The Library is a mock-up of a personal book organizer that makes use of the Google Books API and stores the information chosen by the user to a database. Take a look to check out some of my own favorite books.</p>
+                    <h5>Technologies Used</h5>
+                    <ul class="tech-list">
+                        <li><i class="fab fa-node-js tech"></i>&nbsp Node.js</li> 
+                        <li><i class="fas fa-database tech"></i>&nbsp SQL/Postgres Database</li>
+                        <li><i class="fas fa-cog tech"></i>&nbsp RESTful API</li>
+                        <li><i class="fas fa-gift tech"></i>&nbsp Heroku</li>
+                        <li><i class="fab fa-github tech"></i>&nbsp GitHub</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </div>
-
+    <div id = "separator1"></div>
     <div id="about">
-        <img class="separator" src="img/match1.png"/>
         <h3>About Me</h3>
-        <p>I've  worked for organizations ranging from small non-profits to multi-national corporations - predominantly in the international development and social responsibility sectors.  After building a skillset in program evaluation and program management for over a decade, I wanted to find a career that allowed for more creativity and an opportunity to amplify social impact through software development. Through reading, online tutorials, and bootcamp classes, I've become proficient in Node and SQL. </p>
+        <p>I've  worked for organizations ranging from small non-profits to multi-national corporations - predominantly in the international development and social responsibility sectors.  In these jobs, I got a taste of product development and, thanks to the amazing software developers on my team, was introduced to the creativity and fun offered by coding.  I took online and bootcamp classes, completed passion projects, and volunteered my development skills to local non-profit, Real Change.  What started as a hobby has now become my passion and I'm now pursuing opportunities to become a full-time developer.  If you're looking for someone with an inquisitive mind, unflagging work ethic, and a long track record of collaborative success, you've found them. </p>
     </div>
+    <div id="separator2"></div>
    <div id="contact">
-    <img src="img/match2.png" class="separator"/>   
     <h3>Contact</h3>
        <ul>
            <li><i class="fas fa-envelope"></i><a href="mailto:contact@eckermania.com">&nbsp contact@eckermania.com</a></li>
            <li></li>
            <li><i class="fas fa-phone"></i><a href="tel:2064843257">&nbsp 206.484.3257</a></li>
        </ul>
-       <img src="img/match3.png">
    </div>
    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/app.js" type="application/JavaScript"></script>
     <script src="js/server.js" type="application/JavaScript"></script>
   </body>
 </html>

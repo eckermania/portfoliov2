@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: black;
-    padding: 5vh 0vw;
+    padding: 2vw;
     color: white;
     text-align: center;
 }
@@ -20,28 +20,34 @@ h1 {
 
 h2 {
     font-size: 2vw;
-    margin-top: 2vh;
+    margin-top: 1vw;
 }
 
 h3 {
     font-size: 2vw;
     text-align: center;
-    padding: 3vh 2vh;
-}
-h4 {
-    margin: 5vw 2vw 2vw 2vw;
+    padding: 3vw;
 }
 
-h4, .flip-card a {
+h4 a {
     font-size: 2vw;
-    color: white;
-    text-decoration-line: underline;
-    line-height: 2.5vw;
+    color: orange;
+    line-height: 3vw;
+    text-decoration: underline;
 }
 
-.flip-card a:hover {
-    color: orange;
+h4 a:hover {
+    color: orangered;
 }
+
+h5 {
+    font-size: 1.5vw;
+    color: black;
+    line-height: 2.5vw;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
 
 nav {
     font-size: 2vw;
@@ -52,16 +58,20 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    padding: 4vh 5vw;
+    padding: 1vw 2vw;
 }
+
+.tech-list {
+    padding: 1vw;
+    margin: 0;
+    font-size: 1.5vw;
+}
+
 
 a {
     text-decoration: none;
     color: black;
-}
-
-.work {
-    display: block;
+    font-size: 1.5vw
 }
 
 a:hover {
@@ -72,10 +82,6 @@ a:hover {
     color: white;
 }
 
-.work {
-    display: block;
-}
-
 #about p {
     width: 80vw;
     text-align: justify;
@@ -84,20 +90,20 @@ a:hover {
     margin: 2vh auto;
 }
 
-section {
+.project {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2vw;
 }
 
-.flip-card-inner p {
-    font-style: oblique;
-    margin: 0 2vw;
-    font-size: 1.75vw;
+.project-detail {
+    width: 72vw;
+    margin: 2vw;
+}
+
+.project p {
+    font-size: 1.5vw;
     line-height: 2.5vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
 }
 
 #mobile-nav {
@@ -114,16 +120,17 @@ section {
 
 #contact a {
     color:black;
+    font-size: 2vw;
 }
 
-#contact a:hover {
+#contact a:hover, #rc-link:hover {
     color: tomato;
 }
 
 #contact li {
     font-size: 2vw;
     text-align: center;
-    margin-bottom: 1vw;
+    margin-bottom: 10vw;
 }
 
 #contact i.fas {
@@ -137,58 +144,39 @@ section {
     text-align: center;
 }
 
+#rc-link {
+    color: orange;
+    text-decoration: underline;
+}
+
 /* Images */
 
 header img {
-    height: 20vh;
-    margin: 2vh auto;
+    height: 5vw;
+    margin: 2vw auto;
 }
 
 nav img {
     height: 4vh
 }
 
-.separator {
-    height: 5vw;
-    display: block;
-    text-align: center;
-    margin: 4vh auto;
+#separator1, #separator2, #separator3 {
+    width: 85vw;
+    height: .5vw;
+    background-color: orange;
+    margin: 5vw 7.5vw;
+
 }
 
-.flip-card img {
+.thumbnail {
     width: 20vw;
     height: 20vw;
-    border-radius: 5px;
+    margin: auto 2vw;
 }
 
-.work a:hover {
+i.tech {
+    display: inline-block;
     color: orange;
-}
-
-.description {
-    margin: 2vw 8vw;
-    text-align: justify;
-}
-
-.description p {
-    font-size: 2vw;
-    line-height: 5.5vw;
-    margin-bottom: 5vw;
-}
-
-.site-link {
-    color: tomato;
-    text-align: center;
-    margin-bottom: 6vw;
-    text-decoration: underline;
-}
-
-.site-link a {
-    color: tomato;
-}
-
-.site-link a:hover {
-    color: orange
 }
 
 
@@ -232,11 +220,6 @@ nav img {
     i.hidden, nav {
         display: none;
     }
-
-
-    #mobile-nav {
-        display: block;
-    }
     
     #mobile-nav a {
         color: black
@@ -258,85 +241,8 @@ nav img {
         line-height: 1.5;
     }
 
-    #card-1, #card-2, #card-3, #card-4 {
-        width: 60vw;
-        height: 60vw;
-        margin-bottom: 2vw;
-    }
-
-    .flip-card img {
-        width: 60vw;
-        height: 60vw;
-    }
-
-    .flip-card h4 {
-        font-size: 8vw;
-        line-height: 12vw;
-        margin: 10vw 2vw 2vw 2vw;
-    }
-
-    .flip-card p {
-        font-size: 7vw;
-        margin: 0 3vw 2vw 3vw;
-        line-height: 10vw;
-    }
-
     #contact li {
         font-size: 6vw;
-        margin-bottom: 5vw;
     }
 
-
 }
-
-
-/* Flip Card Animation  */
-
-.flip-card {
-    background-color: transparent;
-    width: 20vw;
-    height: 20vw;
-    border: 1px solid orange;
-    padding: auto 1vw;
-    border-radius: 5px;
-    perspective: 1000px; 
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 5px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: white;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: black;
-    color: white;
-    transform: rotateY(180deg);
-  }
-
